@@ -1,14 +1,20 @@
-import '../styles/globals.css'
+import 'normalize.css';
+import '../styles/globals.css';
 
-import { Provider } from 'react-redux'
-import type { AppProps } from 'next/app'
+import { Provider } from 'react-redux';
 
-import store from '../store'
+import store from '../store';
+import { AppPropsWithLayout } from '@/models/common';
+import { EmptyLayout } from '@/components/layout';
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
+  const Layout = Component.Layout ?? EmptyLayout;
+
   return (
-    <Provider store={store}>
-      <Component {...pageProps} />
-    </Provider>
-  )
+    <Layout>
+      <Provider store={store}>
+        <Component {...pageProps} />
+      </Provider>
+    </Layout>
+  );
 }
