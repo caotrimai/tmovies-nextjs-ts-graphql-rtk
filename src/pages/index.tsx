@@ -10,6 +10,7 @@ import Logo from '@/public/logo.svg';
 const Home: NextPageWithLayout = () => {
   return (
     <div className={styles.container}>
+      HOME
         {/*<Counter />*/}
     </div>
   );

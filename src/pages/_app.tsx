@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import 'normalize.css';
 import '../styles/globals.css';
 
@@ -12,6 +13,10 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <Layout>
+      <Head>
+        <title>Simple test website</title>
+        <meta name="description for the website" content="PhimHD" />
+      </Head>
       <Provider store={store}>
         <Component {...pageProps} />
       </Provider>

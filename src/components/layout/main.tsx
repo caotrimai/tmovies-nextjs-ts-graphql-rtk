@@ -1,7 +1,6 @@
 import { LayoutProps } from '@/models/index';
 import styled from 'styled-components';
-import Link from 'next/link';
-import {Header} from './LayoutSession'
+import { Footer, Header, Main } from './LayoutSession';
 
 const Container = styled.div`
   font-size: 1.2rem;
@@ -9,11 +8,12 @@ const Container = styled.div`
 
 export function MainLayout({ children }: LayoutProps) {
   return (
-    <Container className='container'>
-      <Header/>
-      <div>
+    <Container>
+      <Header />
+      <Main>
         {children}
-      </div>
+      </Main>
+      <Footer />
     </Container>
   );
 }
