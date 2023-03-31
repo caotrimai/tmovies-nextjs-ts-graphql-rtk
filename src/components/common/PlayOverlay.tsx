@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import ICON_PLAY from '@/assets/images/play.svg';
+import ICON_PLAY from '@/public/assets/images/play.svg';
 
 const PlayOverlayStyled = styled.div`
   position: absolute;

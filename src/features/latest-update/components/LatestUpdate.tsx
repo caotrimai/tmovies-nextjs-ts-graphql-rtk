@@ -84,7 +84,7 @@ const PanelBody = () => {
   const movie = {
     title: 'Khanh Khanh Nhật Thường (Tân Xuyên Nhật Thường)',
     sub: 'New Life Begins',
-    thumbnail: 'https://phimhd.cc/upload/vod/20230205-2/dd55285f85d5fc250663ff63dd161918.jpg',
+    thumbnail: '/assets/images/khanh-khanh-nhat-thuong.png',
     year: 2021,
     type: 'Cổ trang',
   };

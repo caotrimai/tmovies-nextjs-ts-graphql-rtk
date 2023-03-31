@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Movie } from '@/models/movie';
 import { PlayOverlay } from '@/components/common';
+import Image from 'next/image';
   
   interface BaListItemProps {
     movie: Movie;
@@ -66,10 +67,14 @@ export default function BaListItem({movie}: BaListItemProps){
   const BaListItemWrapper = () => {
     return (
       <BaListItemWrapperStyled className="BaListItemWrapper">
-        <img 
+        <Image 
           className='thumbnail'
           alt={movie.title}
           src={movie.thumbnail}
+          priority
+          width={200}
+          height={300}
+          style={{width: 'auto', height: 'auto'}}
         />
         <PlayOverlay/>
         <div className="describe">

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import Image from 'next/image';
 import { LoginOutlined, SearchOutlined } from '@ant-design/icons';
-import HeaderLogo from '@/assets/images/logo_header.png';
+import HeaderLogo from '@/public/assets/images/logo_header.png';
 import { NavLink } from '@/components/common';
 import HotList from '@/features/hot-list/components/HotList';
 import { useScrollPosition } from '@/hooks/index';

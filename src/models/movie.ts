@@ -1,6 +1,6 @@
 export interface Movie {
   id?: string|number;
-  thumbnail?: string;
+  thumbnail: string;
   title: string;
   sub: string;
   year?: number;
