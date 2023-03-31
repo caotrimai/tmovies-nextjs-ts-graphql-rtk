@@ -4,11 +4,14 @@ html {
 :root{
   --COLOR_GREY: #999;
   --COLOR_WHITE: #fff;
+  --COLOR_BLACK: #000;
   --COLOR_GRAY_2: #ddd;
   
   --CONTENT_WIDTH_MAX: 1200px;
-  --FOOTER_HEIGHT: 10.8rem;
-  --HEADER_HEIGHT: 6.2rem;
+  --FOOTER_HEIGHT: 11rem;
+  --HEADER_HEIGHT: 50.9rem;
+  
+  --transition-default: all 0.3s ease-in-out;
 }
 html,
 body {
@@ -47,4 +50,10 @@ li {
   height: 1rem;
   vertical-align: -0.05rem;
   background-color: #d6d6d6;
+}
+
+
+.slick-prev:before,
+.slick-next:before  {
+  font-size: 3rem;
 }

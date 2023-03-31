@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import 'normalize.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import '../styles/globals.css';
 
 import { Provider } from 'react-redux';
