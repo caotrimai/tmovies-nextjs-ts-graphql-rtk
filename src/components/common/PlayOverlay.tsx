@@ -26,8 +26,8 @@ const PlayOverlayStyled = styled.div`
     filter: alpha(opacity=100);
     background-color: var(--COLOR_BLACK);
     img {
-      width: 50%;
-      height: 50%;
+      width: 35%;
+      height: 35%;
       opacity: 1;
     }
   }
@@ -37,7 +37,7 @@ export function PlayOverlay() {
 
   return (
     <PlayOverlayStyled>
-      <Image className='play' src={ICON_PLAY} alt='Play'></Image>
+      <Image className='play' src={ICON_PLAY} alt='Play' priority={false}></Image>
     </PlayOverlayStyled>
   );
 }

@@ -13,12 +13,20 @@ const LogoStyled = styled.div`
   justify-content: flex-start;
   align-items: center;
   cursor: pointer;
+  h1 {
+    position: absolute;
+    z-index: -1;
+    color: transparent;
+  }
 `;
 
 const Logo = () => {
   return (
     <LogoStyled>
       <Image src={HeaderLogo} alt='PhimHD header logo' width={130} height={36} priority />
+      <h1>
+        Xem phim | Phim Bộ | Phim lẻ | Phim mới | Xem phim vietsub | Xem Phim Online | Phim HD | Phim hay
+      </h1>
     </LogoStyled>
   );
 };
@@ -39,13 +47,13 @@ const HeaderNavStyled = styled.nav`
       align-items: center;
 
       &.active {
-        color: var(--COLOR_GRAY_2);
-        border-bottom: 0.2rem solid var(--COLOR_GRAY_2);
+        color: var(--COLOR_GRAY_SECONDARY);
+        border-bottom: 0.2rem solid var(--COLOR_GRAY_SECONDARY);
       }
     }
 
     & > .nav-item:hover {
-      color: var(--COLOR_GRAY_2);
+      color: var(--COLOR_GRAY_SECONDARY);
     }
   }
 `;
@@ -148,7 +156,7 @@ const AccountItemStyled = styled.div`
   }
 
   .icon:hover svg {
-    color: var(--COLOR_GRAY_2);
+    color: var(--COLOR_GRAY_SECONDARY);
   }
 `;
 
@@ -299,7 +307,7 @@ const Header = () => {
       </HeaderBackground>
       <HeaderSearch className={clsx('header-section', { 'nav-fixed': isNavFixed })} />
       <HotListStyled>
-        <HotList onChangeSlide={(movie) => setHeaderBackground(movie.thumbUrl)} />
+        <HotList onChangeSlide={(movie) => setHeaderBackground(movie.thumbnail)} />
       </HotListStyled>
     </HeaderStyled>
   );

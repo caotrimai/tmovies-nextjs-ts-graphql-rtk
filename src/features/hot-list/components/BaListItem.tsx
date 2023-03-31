@@ -69,7 +69,7 @@ export default function BaListItem({movie}: BaListItemProps){
         <img 
           className='thumbnail'
           alt={movie.title}
-          src={movie.thumbUrl}
+          src={movie.thumbnail}
         />
         <PlayOverlay/>
         <div className="describe">

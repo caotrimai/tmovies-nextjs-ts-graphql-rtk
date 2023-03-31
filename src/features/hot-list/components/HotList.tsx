@@ -32,37 +32,37 @@ export default function HotList({onChangeSlide}: HotListProps) {
   const movieList: Movie[] = [
     {
       id: 1,
-      thumbUrl: 'https://phimhd.cc/upload/vod/20230105-1/7eede13fd39579b6e68c0ac2414ca98a.jpg',
+      thumbnail: 'https://phimhd.cc/upload/vod/20230105-1/7eede13fd39579b6e68c0ac2414ca98a.jpg',
       title: 'Hướng Gió Mà Đi 1',
       sub: 'Flight to You',
     },
     {
       id: 2,
-      thumbUrl: 'http://img.ophim1.cc/uploads/movies/thuong-lan-quyet-thumb.jpg',
+      thumbnail: 'http://img.ophim1.cc/uploads/movies/thuong-lan-quyet-thumb.jpg',
       title: 'Thuong Lan Quyet',
       sub: 'Flight to You',
     },
     {
       id: 5,
-      thumbUrl: 'https://phimhd.cc/upload/vod/20230105-1/7eede13fd39579b6e68c0ac2414ca98a.jpg',
+      thumbnail: 'https://phimhd.cc/upload/vod/20230105-1/7eede13fd39579b6e68c0ac2414ca98a.jpg',
       title: 'Hướng Gió Mà Đi 5',
       sub: 'Flight to You',
     },
     {
       id: 3,
-      thumbUrl: 'https://phimhd.cc/upload/vod/20230205-2/c451635390ea81d38d0929f880accab3.jpg',
+      thumbnail: 'https://phimhd.cc/upload/vod/20230205-2/c451635390ea81d38d0929f880accab3.jpg',
       title: 'Con út nha tài phiệt',
       sub: 'Flight to You',
     },
     {
       id: 6,
-      thumbUrl: 'https://phimhd.cc/upload/vod/20230105-1/7eede13fd39579b6e68c0ac2414ca98a.jpg',
+      thumbnail: 'https://phimhd.cc/upload/vod/20230105-1/7eede13fd39579b6e68c0ac2414ca98a.jpg',
       title: 'Hướng Gió Mà Đi 6',
       sub: 'Flight to You',
     },
     {
       id: 7,
-      thumbUrl: 'https://phimhd.cc/upload/vod/20230205-2/c451635390ea81d38d0929f880accab3.jpg',
+      thumbnail: 'https://phimhd.cc/upload/vod/20230205-2/c451635390ea81d38d0929f880accab3.jpg',
       title: 'Con út nha tài phiệt',
       sub: 'Flight to You',
     },

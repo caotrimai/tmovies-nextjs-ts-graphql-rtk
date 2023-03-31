@@ -21,7 +21,7 @@ const FooterStyled = styled.footer`
       color: var(--COLOR_WHITE);
 
       & > a:hover {
-        color: var(--COLOR_GRAY_2);
+        color: var(--COLOR_GRAY_SECONDARY);
       }
     }
   }

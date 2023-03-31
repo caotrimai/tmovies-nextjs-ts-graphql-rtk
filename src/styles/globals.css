@@ -5,7 +5,9 @@ html {
   --COLOR_GREY: #999;
   --COLOR_WHITE: #fff;
   --COLOR_BLACK: #000;
-  --COLOR_GRAY_2: #ddd;
+  --COLOR_GRAY_SECONDARY: #ddd;
+  --COLOR_GRAY_THIRD: #999;
+  --COLOR_RED_PRIMARY: #fb7299;
   
   --CONTENT_WIDTH_MAX: 1200px;
   --FOOTER_HEIGHT: 11rem;
