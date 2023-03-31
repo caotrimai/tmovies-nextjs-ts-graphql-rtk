@@ -228,7 +228,7 @@ const HeaderSearchStyled = styled.div`
       line-height: 1.25rem;
       border: 0;
       transition: .5s 0s all ease-out;
-      font-size: 1rem;
+      font-size: 1.4rem;
       box-shadow: unset;
       outline: unset;
 

@@ -55,7 +55,7 @@ const BaListItemWrapperStyled = styled.div`
       bottom: 0;
       left: 1rem;
       height: 40%;
-      width: calc(100% - 2rem);
+      width: calc(100%);
       overflow: hidden;
       background-repeat: no-repeat;
       background-image: linear-gradient(transparent,rgba(0,0,0,.8));
@@ -71,10 +71,10 @@ export default function BaListItem({movie}: BaListItemProps){
           className='thumbnail'
           alt={movie.title}
           src={movie.thumbnail}
-          priority
+          priority={false}
           width={200}
           height={300}
-          style={{width: 'auto', height: 'auto'}}
+          style={{width: '100%', height: '100%'}}
         />
         <PlayOverlay/>
         <div className="describe">
