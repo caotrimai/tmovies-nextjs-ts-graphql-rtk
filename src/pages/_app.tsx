@@ -33,10 +33,8 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <meta property='og:image:height' content='1925' />
         <meta property='og:image:type' content='image/png' />
         <meta name='twitter:card' content='summary_large_image' />
-        <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
-        <meta http-equiv='X-UA-Compatible' content='IE=EmulateIE10' />
         <meta name='renderer' content='webkit|ie-comp|ie-stand' />
-        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+        <meta name="theme-color" content="#4e4e4e"/>
       </Head>
       <Provider store={store}>
         <Component {...pageProps} />

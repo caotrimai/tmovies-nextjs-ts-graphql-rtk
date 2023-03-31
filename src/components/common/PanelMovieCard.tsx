@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { PlayOverlay } from '@/components/common/PlayOverlay';
 import { Movie } from '@/models/movie';
+import Image from 'next/image';
 
 const PanelMovieCardStyled = styled.div`
   border-radius: .4rem;
@@ -26,7 +27,8 @@ const PanelMovieCardStyled = styled.div`
     left: 1rem;
     font-size: 1.2rem;
     color: var(--COLOR_WHITE);
-
+    text-shadow: 0 0 .2rem rgba(0, 0, 0, .5);
+    
     span {
       border-radius: .2rem;
       padding: .2rem .4rem;
@@ -80,10 +82,14 @@ export const PanelMovieCard = ({movie}: PanelMovieCardProps) => {
   return (
     <PanelMovieCardStyled>
       <div className='thumbnail'>
-        <img
+        <Image
           className='thumbnail-image'
           alt={'Khanh Khanh Nhật Thường (Tân Xuyên Nhật Thường)'}
-          src={'https://phimhd.cc/upload/vod/20230205-2/dd55285f85d5fc250663ff63dd161918.jpg'}
+          src={'/assets/images/khanh-khanh-nhat-thuong.png'}
+          width={100}
+          height={100}
+          style={{width: '100%', height: '100%'}}
+          priority={false}
         />
         <PlayOverlay />
       </div>
